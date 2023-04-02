@@ -1,0 +1,8 @@
+:not(pre) > code:before,
+:not(pre) > code:after {
+  opacity: 0;
+}
+
+:not(pre) > code {
+  background: rgb(66, 83, 100);
+}
