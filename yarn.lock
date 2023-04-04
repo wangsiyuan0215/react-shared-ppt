@@ -431,6 +431,20 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/logos@^1.1.24":
+  version "1.1.24"
+  resolved "https://registry.npmmirror.com/@iconify-json/logos/-/logos-1.1.24.tgz#62df4e7d1082db033bbbbea76f4d559381d49f6d"
+  integrity sha512-A93dQCvPlka1c5Mn52lQYW4kEQkd3+oXzYI9ju2n8xW2aBJOyAltyJYcYWeVhw7bofJ0bj66Cw/r9avBCiKH0Q==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/mdi@^1.1.50":
+  version "1.1.50"
+  resolved "https://registry.npmmirror.com/@iconify-json/mdi/-/mdi-1.1.50.tgz#05d4b1ace36ce5df1699da19c2f0042917780918"
+  integrity sha512-SgbT5w5eHCdOG74ZWPz7HlTGk6VsifIJhNi6lAsxj/5Nlqt6Cz4LlQmSa9eecU9p075Jub2aAx/o7YI+GCahRQ==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/ph@^1.1.5":
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/@iconify-json/ph/-/ph-1.1.5.tgz#157a7559945c2c86bab0821091ef5181c7b9929e"
