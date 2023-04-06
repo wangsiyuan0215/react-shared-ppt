@@ -7,7 +7,7 @@ title: What is JSX?
 给定“获取用户列表”的简单业务场景，用原生 JavaScript (ES6) 如何实现呢？
 
 <!-- 对比：不用 JSX 怎么处理，用 JSX 怎么写 -->
-<iframe src="https://stackblitz.com/edit/jsx-native-js?embed=1&file=script.js" class="w-full h-[calc(100%+5px)]" />
+<iframe src="https://stackblitz.com/edit/jsx-native-js?embed=1&file=index.html&theme=dark" class="w-full h-[calc(100%+5px)]" />
 
 <!--
 React 的特点之一就是 JSX，那什么是 JSX 呢，它对我们开发人员有什么帮助呢？
@@ -31,7 +31,7 @@ JSX 的全称是 "Javascript and XML"，它允许我们可以在 JS 中编写 XM
 
 ### 一个 🌰 (例子)
 
-```tsx {all|1-7|9-18|3,5,11,12,13,16|13,15|4,14}
+```tsx {all|1-7|9-18|3,5,11-13,15,16|13,15|4,14}
 function AlertButton({ message, children }) {
   return (
     <button className="btn__alert" style={{ width: '20px' }} onClick={() => alert(message)}>
@@ -66,15 +66,19 @@ hideInToc: true
 
 # React JSX vs Vue Template
 
+<span class="text-gray-400">下表为 React JSX 和 Vue Template 的同异。</span>
+
+<!-- // TODO... 介绍 -->
+
 | 对比         | React                          | Vue                                               |
 | ------------ | ------------------------------ | ------------------------------------------------- |
-| 变量、表达式 | 用 `{}` 表示                   | 用 `{{}}` 表示                                    |
+| 组件         | 大驼峰                         | 大驼峰、小驼峰、短横线均可                        |
+| 原生标签     | **必须**自闭合                 | 无区别                                            |
 | 作用域       | 全局、函数和块级作用域         | 绑定到 Vue 组件实例、全局 Context 和 Slot context |
+| 变量、表达式 | 用 `{}` 表示                   | 用 `{{}}` 表示                                    |
 | 属性         | 小驼峰，_class 改为 className_ | 小驼峰、短横线命名均可                            |
 | 动态属性     | 参数后加 `{}`                  | 参数前加 `:`                                      |
 | 事件         | 事件后加 `{}`                  | 事件前加 `v-on` 或 `@`                            |
-| 组件         | 大驼峰                         | 大驼峰、小驼峰、短横线均可                        |
-| 原生标签     | **必须**自闭合                 | 无区别                                            |
 
 <!--
 

@@ -28,8 +28,10 @@ Read more about [React](https://react.dev/)
 
 <div v-click="2">
 
-```tsx {8,9|1,2,3-7,10-12|4,7|all} {at:2}
-function Video({
+```tsx {10,11|3-9,12-14|6,9|all} {at:2}
+import { FunctionComponentFactory as FC } from 'react'
+
+const Video: FC<{ video: string }> = ({
   video
 }) {
   const onPlay = () => { console.log('Play video.'); }
@@ -47,7 +49,7 @@ function Video({
 
 <v-clicks at="6">
 
-<img src="/public/images/nextjs.png" class="relative z-[2] w-full -mt-32">
+<img src="/public/images/nextjs.png" class="relative z-[2] w-full -mt-40">
 <img src="/public/images/remix.png" class="relative w-full z-[3] -mt-16">
 <img src="/public/images/umijs.png" class="relative w-full z-[3] -mt-16">
 

@@ -6,7 +6,7 @@ favicon: ./public/images/logo-react.ico
 drawings:
   enabled: false
   persist: false
-lineNumbers: false
+lineNumbers: true
 highlighter: shiki
 ---
 

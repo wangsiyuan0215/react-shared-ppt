@@ -12,10 +12,12 @@ transition: slide-up
   <h4 @click="onClick">{{ title }}</h4>
 </template>
 
-<script setup>
-const props = defineProps(['title'])
+<script lang="ts" setup>
+type Props = {
+  title: string
+}
+const props = defineProps<Props>(['title'])
 const emits = defineEmits(['click'])
-
 const onClick = () => emits('click', props.title)
 </script>
 ```
