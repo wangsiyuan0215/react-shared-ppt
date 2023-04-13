@@ -103,16 +103,16 @@ hideInToc: true
 <span class="text-gray-400">下表为 React JSX 和 Vue Template 的异同。</span>
 
 
-| 对比         | React                          | Vue                                               |
-| ------------ | ------------------------------ | ------------------------------------------------- |
-| 组件调用       | 大驼峰                         | 大驼峰、小驼峰、短横线均可                        |
-| 原生标签     | **必须**闭合（包括自闭合）             | 无区别                                            |
-| 作用域       | 全局、函数和块级作用域         | 绑定到 Vue 组件实例、全局 Context 和 Slot context |
-| 变量、表达式 | 用 `{}` 表示                   | 用 `{{}}` 表示                                    |
-| 属性         | 小驼峰，_class 改为 className_ | 小驼峰、短横线命名均可                            |
-| 动态属性     | 参数后加 `{}`                  | 参数前加 `:`                                      |
-| 事件         | 事件后加 `{}`，值为函数              | 事件前加 `v-on` 或 `@`                            |
-| <span :class="{'text-highlight-2 ': highlight }">动态渲染</span>      | <span :class="{'text-highlight-2 ': highlight }">一切皆为 JavaScript </span>             | `v-for` / `v-if` / `v-show` ...                        |
+| 对比                                                             | React                                                                        | Vue                                               |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------- |
+| 组件调用                                                         | 大驼峰                                                                       | 大驼峰、小驼峰、短横线均可                        |
+| 原生标签                                                         | **必须**闭合（包括自闭合）                                                   | 无区别                                            |
+| 作用域                                                           | 全局、函数和块级作用域                                                       | 绑定到 Vue 组件实例、全局 Context 和 Slot context |
+| 变量、表达式                                                     | 用 `{}` 表示                                                                 | 用 `{{}}` 表示                                    |
+| 属性                                                             | 小驼峰，_class 改为 className_                                               | 小驼峰、短横线命名均可                            |
+| 动态属性                                                         | 参数后加 `{}`                                                                | 参数前加 `:`                                      |
+| 事件                                                             | 事件后加 `{}`，值为函数                                                      | 事件前加 `v-on` 或 `@`                            |
+| <span :class="{'text-highlight-2 ': highlight }">动态渲染</span> | <span :class="{'text-highlight-2 ': highlight }">一切皆为 JavaScript </span> | `v-for` / `v-if` / `v-show` ...                   |
 
 <span class="absolute left-[20px] bottom-[42px]" :class="{'text-highlight-2 ': highlight}" @click="trigger"><uim-rocket /></span> 
 
