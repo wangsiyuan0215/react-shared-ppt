@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@iconify-json/logos": "^1.1.24",
-    "@iconify-json/mdi": "^1.1.50"
+    "@iconify-json/mdi": "^1.1.50",
+    "@iconify-json/uim": "^1.1.5"
   }
 }

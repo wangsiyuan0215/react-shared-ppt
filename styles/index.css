@@ -17,3 +17,7 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+.text-highlight-2 {
+  color: var(--purple) !important;
+}

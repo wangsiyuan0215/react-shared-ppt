@@ -16,7 +16,7 @@ transition: slide-up
 - 用代码和标签编写组件
 - 在任何地方添加交互
 - 渐进式 JavaScript 框架
-- Nextjs / Remix / Umijs
+- NextJs / Remix / UmiJs
 
 </v-clicks>
 
