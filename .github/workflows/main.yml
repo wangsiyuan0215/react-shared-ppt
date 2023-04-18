@@ -28,6 +28,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          REPOSITORY_NAME: wangsiyuan0215/react-tech-shared
+          REPOSITORY_NAME: wangsiyuan0215/react-shared-ppt
           BRANCH: main
           FOLDER: dist
+          TARGET_FOLDER: site
