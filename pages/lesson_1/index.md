@@ -38,10 +38,10 @@ src: ./components.md
 # Components
 
 ---
-src: ./what-is-lifecycle.md
+src: ./lifecycle.md
 ---
 
-# What is lifecycle?
+# Lifecycle
 
 
 ---
