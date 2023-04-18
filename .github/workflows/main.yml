@@ -10,7 +10,6 @@ permissions:
   contents: write
 
 jobs:
-  # This workflow contains a single job called "build"
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
@@ -21,13 +20,6 @@ jobs:
         uses: actions/setup-node@v3.6.0
         with:
           node-version: '16.x'
-
-      - name: Cache node modules
-        # 设置包缓存目录，避免每次下载
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         
       - name: Build
         run: npm install && npm run build
