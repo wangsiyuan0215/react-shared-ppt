@@ -3,6 +3,7 @@ node_modules
 .DS_Store
 dist
 *.local
+.docs
 index.html
 .remote-assets
 components.d.ts
