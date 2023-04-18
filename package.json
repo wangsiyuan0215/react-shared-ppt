@@ -2,7 +2,7 @@
   "name": "react-tech-shared",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base /react-tech-shared/",
     "dev": "slidev --open",
     "export": "slidev export"
   },
