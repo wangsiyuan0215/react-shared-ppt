@@ -31,4 +31,4 @@ jobs:
           REPOSITORY_NAME: wangsiyuan0215/react-shared-ppt
           BRANCH: main
           FOLDER: dist
-          TARGET_FOLDER: site
+          TARGET_FOLDER: docs
