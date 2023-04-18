@@ -232,7 +232,19 @@ const HeroItem: FC<Props> = ({ item }) => {
 }
 ```
 
-<div v-click class="mt-[-335px]">
+<!-- 
+最后，我们需要在组件内部返回 JSX
+
+我们可以在直接在 return 中写类似于 HTML 的语法，然后如果是动态值，需要放到大括号里。
+
+至此，我们的组件就创建完成了。
+ -->
+
+---
+hideInToc: true
+---
+
+# Review `HeroItem.tsx`
 
 ```tsx
 // HeroItem.tsx
@@ -260,14 +272,9 @@ const HeroItem: FC<Props> = ({ item }) => {
 export default HeroItem;
 ```
 
-</div>
 
 <!-- 
-最后，我们需要在组件内部返回 JSX
+OK，最后这是全部 HeroItem 的代码。
 
-我们可以在直接在 return 中写类似于 HTML 的语法，然后如果是动态值，需要放到大括号里。
-
-至此，我们的组件就创建完成了，最后这是全部代码：（click）
-
-OK，到这块为止，大家有什么问题吗？（waiting 2min）
+到这块为止，大家有什么问题吗？（waiting 2min）
  -->
