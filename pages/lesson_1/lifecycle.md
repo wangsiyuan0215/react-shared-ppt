@@ -15,7 +15,7 @@ React 的**类组件**有生命周期，而**函数式组件**的生命周期是
 
 ### 旧生命周期
 
-<img src="/public/images/old-lifecycle.awebp" class="mt-4"/>
+<img src="/public/images/old-lifecycle.webp" class="mt-4"/>
 
 </div>
 
@@ -31,7 +31,7 @@ React 的**类组件**有生命周期，而**函数式组件**的生命周期是
 
 ### 新生命周期
 
-<img src="/public/images/new-lifecycle.awebp"  class="mt-4" />
+<img src="/public/images/new-lifecycle.webp"  class="mt-4" />
 
 </div>
 
