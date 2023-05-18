@@ -7,7 +7,7 @@ title: What is JSX?
 给定“获取用户列表”的简单业务场景，用原生 JavaScript (ES6) 如何实现呢？
 
 <!-- 对比：不用 JSX 怎么处理，用 JSX 怎么写 -->
-<iframe src="https://stackblitz.com/edit/jsx-native-js?ctl=1&embed=1&file=index.html&hideNavigation=1&theme=dark" class="w-full h-[calc(100%+5px)]" />
+<iframe src="https://stackblitz.com/edit/jsx-native-js?ctl=1&embed=1&file=index.html&hideNavigation=1&theme=dark" class="w-full h-[calc(100%-55px)]" />
 
 <!--
 React 的特点之一就是 JSX，那什么是 JSX 呢，它对我们开发人员有什么帮助呢？
@@ -139,7 +139,7 @@ hideInToc: true
 
 接下来我们看看如何用 JSX 来实现获取“英雄列表”的功能。
 
-<iframe src="https://stackblitz.com/edit/lesson-one-jsx?ctl=1&embed=1&file=index.tsx&hideNavigation=1&theme=dark" class="w-full h-[calc(100%+5px)]" />
+<iframe src="https://stackblitz.com/edit/lesson-one-jsx?ctl=1&embed=1&file=index.tsx&hideNavigation=1&theme=dark" class="w-full h-[calc(100%-55px)]" />
 
 <!-- 
 

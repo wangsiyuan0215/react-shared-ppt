@@ -69,19 +69,19 @@ src: ./homework.md
 # Homework
 
 ---
-hideInToc: true
+src: ./hooks/state.md
 ---
 
 # State Hooks
 
 ---
-hideInToc: true
+src: ./hooks/context.md
 ---
 
 # Context Hooks
 
 ---
-hideInToc: true
+src: ./hooks/ref.md
 ---
 
 # Ref Hooks
