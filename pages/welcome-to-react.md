@@ -4,8 +4,9 @@ class: text-center
 hideInToc: true
 transition: slide-left
 ---
+<mdi-react class="text-[#4EC5D4] animate-spin-slow text-[100px] -mt-[100px] mb-6" />
 
-# <mdi-react class="text-[#4EC5D4] font-normal animate-spin-slow" /> <span class="font-bold">Welcome to React</span>
+# <span class="font-semibold text-[48px]">Welcome to <span class="font-bold text-gradient-red text-[72px]">React</span></span>
 
 Shared by [siyuan.wang](mailto:siyuan.wang@capgemini.com)
 

@@ -1,20 +1,13 @@
 ---
 title: Context Hooks
-clicks: 6
 hideInToc: true
 ---
 
-# <span class="hover:underline hover:underline-dashed cursor-pointer" @click="onBack" ><mdi-arrow-left />Context Hooks</span>
+# Context Hooks
 
 在组件的顶层调用 useContext 以读取和订阅上下文，它需要和 `createContext` 配合使用：
 
-<iframe src="https://stackblitz.com/edit/react-ts-wwsbt2?embed=1&theme=dark" class="w-full h-[calc(100%-60px)]" />
-
-<script lang="ts" setup>
-  import { useRouter } from 'vue-router'
-  const router = useRouter()
-  const onBack = () => router.back()
-</script>
+<iframe src="https://stackblitz.com/edit/react-ts-wwsbt2?ctl=1&embed=1&file=App.tsx" class="w-full h-[calc(100%-55px)]" />
 
 <!--
 Context hooks 当组件树中有全局的上下文的情况下才会使用的，它是需要配合 createContext 来使用的。

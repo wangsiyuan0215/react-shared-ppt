@@ -16,3 +16,9 @@ src: ./pages/lesson_1/index.md
 ---
 
 # Lesson One
+
+---
+src: ./pages/lesson_2/index.md
+---
+
+# Lesson Two

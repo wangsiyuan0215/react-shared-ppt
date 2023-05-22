@@ -1,23 +1,15 @@
 ---
-layout: 'center'
-hideInToc: true
----
-
-# Lesson 1
-
-<Toc />
-
----
 src: ./schedule.md
+hideInToc: true
 ---
 
 # Schedule
 
 ---
-src: ./warm-up.md
+layout: 'center'
 ---
 
-# Warm up
+# <span class="text-[60px]">Lesson 1</span>
 
 ---
 src: ./what-is-react.md
@@ -63,43 +55,8 @@ src: ./umijs.md
 # Umi Js
 
 ---
-src: ./homework.md
+src: ./warm-up.md
 ---
 
-# Homework
+# Warm up
 
----
-src: ./hooks/state.md
----
-
-# State Hooks
-
----
-src: ./hooks/context.md
----
-
-# Context Hooks
-
----
-src: ./hooks/ref.md
----
-
-# Ref Hooks
-
----
-hideInToc: true
----
-
-# Effect Hooks
-
----
-hideInToc: true
----
-
-# Performance Hooks
-
----
-hideInToc: true
----
-
-# Other Hooks

@@ -9,7 +9,7 @@ clicks: 3
 
 <div class="flex gap-x-4">
 
-<div class="w-1/2">
+<div class="w-1/2" v-show="$slidev.nav.clicks !== 3">
 
 ### Class Component
 
@@ -36,7 +36,7 @@ export default class AlertButton extends Component {
 
 </div>
 
-<div class="w-1/2">
+<div :class="{ 'w-full': $slidev.nav.clicks === 3, 'w-1/2': $slidev.nav.clicks !== 3 }">
 
 ### Function Component
 

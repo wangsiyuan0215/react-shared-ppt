@@ -1,23 +1,61 @@
 ---
-title: Ref Hooks
-clicks: 2
+title: State Hooks
+clicks: 6
 hideInToc: true
 ---
 
-# <span class="hover:underline hover:underline-dashed cursor-pointer" @click="onBack" ><mdi-arrow-left />Ref Hooks</span>
+# State Hooks
 
-Ref hooks 允许组件保存一些不用于渲染的信息。
+State hooks 是指允许组件“记住”信息状态的函数钩子，共有两种：
 
-- `useRef`：<span :class="{ 'text-gradient-red': $slidev.nav.clicks === 1 }" >引用渲染不需要的值；</span>
-- `useImperativeHandle`：<span :class="{ 'text-gradient-red': $slidev.nav.clicks === 2 }" >自定义公开 ref 的句柄；</span>
+- `useState`：<span :class="{ 'text-gradient-red': $slidev.nav.clicks < 3 && $slidev.nav.clicks >= 1 }" >声明可以直接更新的状态变量；</span>
+- `useReducer`：<span :class="{ 'text-gradient-red': $slidev.nav.clicks >= 3 }" >声明一个状态变量，参数为更新逻辑；</span>
 
-<iframe src="https://stackblitz.com/edit/react-ts-4qdrrv?ctl=1&embed=1&file=components/CounterWithRef.tsx" class="w-full h-[calc(100%-140px)] mt-[16px]" />
+<br />
 
-<script lang="ts" setup>
-  import { useRouter } from 'vue-router'
-  const router = useRouter()
-  const onBack = () => router.back()
-</script>
+<template v-if="$slidev.nav.clicks < 3 && $slidev.nav.clicks >= 1">
+
+```tsx {2,3|6,9,12} {at:1}
+export default function App() {
+  const [heros, setHeros] = React.useState<HeroItem[]>([]);
+  const [loading, setLoading] = React.useState<boolean>(false);
+
+  React.useEffect(() => {
+    setLoading(true);
+    fetch("heros.json")
+      .then(({ users }) => {
+        setHeros(users);
+      })
+      .catch((error) => console.error(error))
+      .finally(() => setLoading(false));
+  }, []);
+}
+```
+
+</template>
+
+<template v-if="$slidev.nav.clicks >= 3">
+
+```tsx {7|1-4|7|12} {at:3}
+function reducer(state, action: { type: string, payload: HeroItem[] }) {
+  if (action.type === "setHeros") return [...action.payload];
+  throw Error("Unknown action.");
+}
+
+export default function App() {
+  const [heros, dispatch] = useReducer<HeroItem[]>(reducer, [] /* ,initFn */);
+
+  React.useEffect(() => {
+    fetch("heros.json")
+      .then(({ users }) => {
+        dispatch({ type: "setHeros", payload: users });
+      })
+      .catch((error) => console.error(error));
+  }, []);
+}
+```
+
+</template>
 
 <!--
 State hooks 是允许组件“记住”用户输入信息等状态的 hooks，可以理解为 Vue3 中的 ref 和 reactive 响应式数据，改变他们会触发界面的重新渲染；
