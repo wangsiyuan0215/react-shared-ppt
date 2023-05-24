@@ -55,8 +55,9 @@ src: ./umijs.md
 # Umi Js
 
 ---
-src: ./warm-up.md
+src: ./thinking.md
 ---
 
-# Warm up
+# Thinking
+
 

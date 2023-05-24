@@ -46,3 +46,9 @@ hideInToc: true
 ---
 
 # Other Hooks
+
+---
+src: ./what-is-update-in-17-and-18.md
+---
+
+# what-is-update-in-17-and-18
