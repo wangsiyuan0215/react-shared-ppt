@@ -12,6 +12,12 @@ src: ./component-definition.md
 # Component Definition
 
 ---
+src: ./hooks.md
+---
+
+# Hooks
+
+---
 src: ./hooks/state.md
 ---
 

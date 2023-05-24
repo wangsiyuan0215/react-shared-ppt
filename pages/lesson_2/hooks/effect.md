@@ -55,6 +55,8 @@ export default function App() {
 
 </div>
 
+*<a href="https://stackblitz.com/edit/lesson-one-jsx?devToolsHeight=33&embed=1&file=App.tsx" target="_blank">Link to Code</a>*
+
 <!--
 还是以之前英雄列表的代码来看下 useEffect 的使用，useEffect 只接受两个参数，第一个是处理函数，我们的请求数据的接口调用的逻辑写在这里。
 

@@ -6,7 +6,7 @@ title: Component Definition
 
 <span class="text-gradient-red">第一步：定义组件并导出</span>
 
-```tsx {none|3|5|all}
+```tsx {3|5|all}
 // HeroItem.tsx
 
 const HeroItem = () => {}
