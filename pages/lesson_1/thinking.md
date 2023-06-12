@@ -17,7 +17,7 @@ transition: slide-up
 <v-click>
 
 <div class="bg-gray-100 p-4">
-    <img src="public/images/think_1.png" class="h-[260px]" />
+    <img src="/public/images/think_1.png" class="h-[260px]" />
 </div>
 
 </v-click>
@@ -25,7 +25,7 @@ transition: slide-up
 <v-click>
 
 <div class="bg-gray-100 p-4">
-    <img src="public/images/think_2.png" class="h-[260px]" />
+    <img src="/public/images/think_2.png" class="h-[260px]" />
 </div>
 
 </v-click>
