@@ -42,16 +42,22 @@ src: ./hooks/effect.md
 # Effect Hooks
 
 ---
-hideInToc: true
+src: ./hooks/performance.md
 ---
 
 # Performance Hooks
 
 ---
-hideInToc: true
+src: ./hooks/other.md
 ---
 
 # Other Hooks
+
+---
+src: ./custom-hooks.md
+---
+
+# Custom Hooks
 
 ---
 src: ./what-is-update-in-17-and-18.md

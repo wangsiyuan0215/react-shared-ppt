@@ -12,31 +12,29 @@ transition: slide-up
 
 </v-click>
 
-<br />
+<div class="flex gap-x-4">
 
 <v-click>
 
-```mermaid {scale: 0.8, themeVariables: { lineColor: '#F8B229' }}
----
-title: Change theme from Light to Dark
----
-flowchart TD
-A[App] --> |prop: theme| B[Toolbar]
-A -.State:theme.-> A
-B -.onClick:onChangeTheme.-> A
-A --> |prop: theme| D[Main]
-B --> |prop: theme| C[Theme button]
-C -.onClick:onChangeTheme.-> B
-D -->|prop: theme| E([Side bar])
-D -->|prop: theme| F([Content])
-D -->|prop: theme| G([Footer])
-```
+<div class="bg-gray-100 p-4">
+    <img src="public/images/think_1.png" class="h-[260px]" />
+</div>
 
 </v-click>
 
 <v-click>
 
-<br />*如何解决这种情况？共有哪些方式？*
+<div class="bg-gray-100 p-4">
+    <img src="public/images/think_2.png" class="h-[260px]" />
+</div>
+
+</v-click>
+
+</div>
+
+<v-click>
+
+*如何解决这种情况？共有哪些方式？*
 
 </v-click>
 
@@ -57,15 +55,17 @@ OK，那我现在公布答案哈，（click）为什么呢？因为要维持单�
 
 根节点是 App 组件，它里面有 Toolbar 和 Main 组件，Toolbar 组件下有一个 ThemeButton 组件，这个组件主要是用来改变当前主题的。
 
-Main 组件下面的子组件都会根据传入的 theme 属性来变更当前的显示主题，也就是说 Main 组件会透传 theme prop 但是不会消费它，而 Side bar、Content 和 Footer 组件会消费 theme prop。
+Main 和 Content 组件下面的子组件都会根据传入的 theme 属性来变更当前的显示主题，也就是说它们会透传 theme prop 但是不会消费它，而 Side bar、Search Box、Table 和 Footer 组件会消费 theme prop。
 
-大家可以看下黄实线，除 App 组件外，每个组件都接受一个 prop 为 theme，那么数据流向就是自上而下的，而且组件之间的依赖关系一目了然。
+大家可以看下黑色的实线，除 App 组件外，每个组件都接受一个 prop 为 theme，那么数据流向就是自上而下的，而且组件之间的依赖关系一目了然。
 
 当我们改变主题时，从 ThemeButton 组件触发 onClick 事件，类似于事件冒泡，将 changeTheme 这个事件传递到 App 组件，在其组件内部我们更新 theme 状态变量。
 
-那么除了 App 组件外所有的子组件的 theme 属性都会被更新，数据再一次单向地从根组件流向到叶子组件。
+（click）那么 App 组件的所有子组件的 theme prop 属性都会被更新，数据再一次单向地从根组件流向到叶子组件。
 
-OK，大家会发现，实际上只有 Sidebar, Content 和 Footer 会消费 theme prop，而且目前我们的结构很简单，如果 Main 组件下有很多层，透传属性就变得十分的繁琐了。
+如右侧的图所展示的，红色方块都是消费 theme 属性的组件，蓝色方它们负责透传 theme prop 给它们的子组件。
+
+大家会发现，实际上只有 Theme Button, Sidebar, Search Box, Table 和 Footer 会根据 theme prop 变化而变化，而且目前页面结构相对简单，如果真的用于实际场景，类似这么透传属性就会变得十分的繁琐和复杂了。
 
 那么有什么好的办法呢？这个留给大家在会后自行了解。
 

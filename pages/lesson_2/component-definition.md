@@ -4,7 +4,7 @@ title: Component Definition
 
 # Component Definition (1/3)
 
-<span class="text-gradient-red">第一步：定义组件并导出</span>
+<span class="text-highlight-2">第一步：定义组件并导出</span>
 
 ```tsx {3|5|all}
 // HeroItem.tsx
@@ -51,7 +51,7 @@ hideInToc: true
 
 <span class="text-gray-600">第一步：定义组件并导出</span>
 
-<span class="text-gradient-red">第二步：声明组件接受的属性 props 以及类型</span>
+<span class="text-highlight-2">第二步：声明组件接受的属性 props 以及类型</span>
 
 ```tsx {all|4-10|2,13|12}
 // HeroItem.tsx
@@ -97,7 +97,7 @@ hideInToc: true
 
 <span class="text-gray-600">第二步：确定组件接受的属性 props</span>
 
-<span class="text-gradient-red">第三步：组件内返回 JSX</span>
+<span class="text-highlight-2">第三步：组件内返回 JSX</span>
 
 ```tsx {all|5-9}
 // HeroItem.tsx
