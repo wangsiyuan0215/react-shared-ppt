@@ -14,6 +14,11 @@ transition: slide-left
 
 Edited by [siyuan.wang](mailto:siyuan.wang@capgemini.com)
 
+<figure class="absolute right-[32px] bottom-[32px] flex flex-col items-center">
+  <h6 class="mb-2">CG React 学习社区</h6>
+  <img src="/public/images/cg-react-qrcode.png" class="w-[100px] h-[100px]" >
+</figure>
+
 <style>
 h1 {
   @apply w-auto mx-auto;
@@ -33,3 +38,9 @@ h1 {
 
 首先，先和大家介绍关于我们这次的培训的目的和计划
 -->
+
+---
+src: ./schedule.md
+---
+
+# Schedule

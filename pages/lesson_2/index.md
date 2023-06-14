@@ -62,18 +62,19 @@ src: ./hooks/other.md
 title: vs Vue3
 ---
 
-# React vs Vue3
+# React Hooks vs Vue3
 
 React hooks 与 Vue3 Composition API 的类比
 
-|                | React hooks             | Vue3 Composition API  | 备注               |
-| -------------- | ----------------------- | --------------------- | ------------------ |
-| 状态           | `useState` `useReducer` | `reactive` `ref`      | -                  |
-| 引用           | `useRef`                | `ref`                 | 不单指引用组件实例 |
-| Context        | `useContext`            | `provider` `inject`   | -                  |
-| Effect / Watch | `useEffect`             | `watchEffect` `watch` | React 手动指定依赖 |
-| 缓存           | `useMemo` `useCallback` | `computed`            | React 机制决定     |
-| DOM            | `useLayoutEffect`       | `nextTick`            | -                  |
+|                | React hooks               | Vue3 Composition API  | 备注               |
+| -------------- | ------------------------- | --------------------- | ------------------ |
+| 状态           | `useState` `useReducer`   | `reactive` `ref`      | -                  |
+| 引用           | `useRef`                  | `ref`                 | 不单指引用组件实例 |
+| Context        | `useContext`              | `provider` `inject`   | -                  |
+| Effect / Watch | `useEffect`               | `watchEffect` `watch` | React 手动指定依赖 |
+| 缓存           | `useMemo` `useCallback`   | `computed`            | React 机制决定     |
+| DOM            | `useLayoutEffect`         | `nextTick`            | -                  |
+| 使用规则       | **组件内** & **顶层作用域** | 任意                  | -                  |
 
 <style>
     td {

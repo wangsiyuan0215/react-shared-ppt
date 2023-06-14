@@ -15,10 +15,10 @@ highlighter: shiki
 src: ./pages/lesson_1/index.md
 ---
 
-# Lesson One
-
 ---
 src: ./pages/lesson_2/index.md
 ---
 
-# Lesson Two
+---
+src: ./pages/lesson_3/index.md
+---

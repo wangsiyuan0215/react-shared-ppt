@@ -1,11 +1,4 @@
 ---
-src: ./schedule.md
-hideInToc: true
----
-
-# Schedule
-
----
 layout: 'center'
 ---
 

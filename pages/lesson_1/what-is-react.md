@@ -1,5 +1,5 @@
 ---
-clicks: 9
+clicks: 8
 layout: two-cols
 transition: slide-up
 ---
@@ -19,7 +19,7 @@ transition: slide-up
 - 用组件创建用户界面
 - 用代码和标签编写组件
 - 在任何地方添加交互
-- 渐进式 JavaScript 框架
+- 渐进式 JavaScript 框架❓
 - NextJs / Remix / UmiJs
 
 </v-clicks>
@@ -51,7 +51,7 @@ const Video: FC<{ video: string }> = ({
 
 </div>
 
-<v-clicks at="6">
+<v-clicks at="5">
 
 <img src="/public/images/nextjs.png" class="relative z-[2] w-full -mt-40">
 <img src="/public/images/remix.png" class="relative w-full z-[3] -mt-16">
