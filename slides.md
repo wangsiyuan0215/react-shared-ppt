@@ -1,6 +1,6 @@
 ---
 src: ./pages/welcome-to-react.md
-title: React Shared
+title: React Shares
 theme: dracula
 favicon: ./public/images/logo-react.ico
 drawings:

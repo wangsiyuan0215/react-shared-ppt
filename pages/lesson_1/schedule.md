@@ -14,7 +14,7 @@
 <div class="mt-5" />
 
 #### “副”作用：
-- 适当普及 ES6+、Typescript 以及<span class="text-highlight">函数式编程</span>；
+- 适当普及 ES6+、Typescript；
 - 在每次课程的最后布置作业；
 - 培训的最后，提供实战类的项目；
 

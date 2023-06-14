@@ -4,18 +4,22 @@ class: text-center
 hideInToc: true
 transition: slide-left
 ---
-<mdi-react class="text-[#4EC5D4] animate-spin-slow text-[100px] -mt-[100px] mb-6" />
 
-# <span class="font-semibold text-[48px]">Welcome to <span class="font-bold text-gradient-red text-[72px]">React</span></span>
+<h1>
+  <span class="font-semibold text-[48px]">
+    Welcome to <span class="font-bold text-gradient-red text-[72px]">React</span>
+    <mdi-react class="text-[#ef4444] animate-bounce text-[40px] ml-1" /> Share
+  </span>
+</h1>
 
-Shared by [siyuan.wang](mailto:siyuan.wang@capgemini.com)
+Edited by [siyuan.wang](mailto:siyuan.wang@capgemini.com)
 
 <style>
 h1 {
   @apply w-auto mx-auto;
   color: transparent !important;
   background-color: #2B90B6;
-  background-image: linear-gradient(90deg, #4EC5D4 40%, #146b8c 70%);
+  background-image: linear-gradient(90deg, #4EC5D4 20%, #146b8c 40%, #4EC5D4 70%, #146b8c 85%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;

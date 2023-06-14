@@ -10,6 +10,7 @@
     "@slidev/cli": "^0.40.5",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
+    "element-plus": "^2.3.6",
     "slidev-theme-dracula": "^0.1.0"
   },
   "devDependencies": {

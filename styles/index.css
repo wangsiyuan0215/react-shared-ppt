@@ -1,5 +1,6 @@
 :not(pre) > code:before,
 :not(pre) > code:after {
+  font-size: 12px;
   opacity: 0;
 }
 

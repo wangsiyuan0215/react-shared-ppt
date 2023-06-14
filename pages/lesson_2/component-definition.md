@@ -61,7 +61,7 @@ type Props = {
   item: {
     id?: string;
     name: string;
-    skills: string[]
+    skills: string[];
   }
 }
 
@@ -82,7 +82,7 @@ export default HeroItem;
 
 （click）然后我们使用 React 提供给我的泛型 FunctionComponentFactory 来对 HeroItem 声明类型
 
-（click）将 props 只需要作为函数的参数声明即可，（click）同时支持参数解构的方式
+（click）将 props 只需要作为函数的参数声明即可，（click）同时支持参数解构的方式，同时需要注意的是 props 是只读的。
 
 接下来就是最后一步了
  -->
@@ -113,7 +113,7 @@ const HeroItem: FC<Props> = ({ item }) => {
 ```
 
 <!-- 
-最后，我们需要在组件内部返回 JSX
+最后，我们需要在组件内部返回 JSX，用来描述 UI。
 
 我们可以在直接在 return 中写类似于 HTML 的语法，然后如果是动态值，需要放到大括号里。
 
