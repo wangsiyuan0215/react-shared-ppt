@@ -7,7 +7,7 @@ title: Performance Hooks
 避免冗余的重新渲染、减少昂贵的计算开销以及降低由其带来的 UI 更新的卡顿等优化钩子。
 
 - [useMemo](https://stackblitz.com/edit/stackblitz-starters-wfafpe?ctl=1&embed=1&file=src%2FApp.tsx)：缓存计算结果（侧重点是值），既可以缓存值，也可以缓存函数（等价于 `useCallback`）；
-- [useCallback](https://stackblitz.com/edit/react-ts-6zym8d?ctl=1&embed=1&file=App.tsx)：缓存函数，避免由于重新渲染每次讲新函数传递到子组件，导致子组件重新渲染；
+- [useCallback](https://stackblitz.com/edit/react-ts-6zym8d?ctl=1&embed=1&file=App.tsx)：缓存函数，一般需要配合 `React.memo` API。避免由于重新渲染每次讲新函数传递到子组件，导致子组件重新渲染；
 - [useTransition](https://stackblitz.com/edit/stackblitz-starters-5kkxa7?ctl=1&embed=1&file=src%2FApp.tsx)：
   - 在不阻塞 UI 情况下更新状态，保持被标记为 transition 的状态变量的响应性（Tab 切换、路由等场景）；
   - 可以被其他状态（非过渡标记）的更新中断，其他状态更新之后会重新执行被标记为 transition 的状态的更新（大数据列表过滤场景）；

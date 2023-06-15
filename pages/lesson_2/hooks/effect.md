@@ -1,24 +1,37 @@
 ---
 title: Effect Hooks
-clicks: 2
 hideInToc: true
 ---
 
 # Effect Hooks
 
-用以处理**副作用**的钩子。副作用包括处理网络 I/O、浏览器 DOM 操作、动画以及其他库等等。
+用以处理**副作用**的钩子。副作用包括处理网络 I/O、浏览器 DOM 操作、事件监听及订阅、动画等等。
 
-- `useEffect`：处理副作用，在 React 挂载 DOM 之前**异步**执行；
+- [useEffect](https://stackblitz.com/edit/lesson-one-jsx?devToolsHeight=33&embed=1&file=App.tsx)：处理副作用，在 React 挂载 DOM 之前**异步**执行；
 - `useLayoutEffect`：`useEffect` 的变体，在浏览器绘制 DOM 之前**同步**执行；
 
 <br />
 
-<div v-show="$slidev.nav.clicks === 1">
+<div class="max-h-[300px] overflow-y-auto">
 
-```tsx {4-12}
-export default function App() {
+```tsx
+export default function App(props) {
   const [heros, setHeros] = React.useState([]);
 
+  // 返回值
+  React.useEffect(() => {
+    const subscription = subscribe('user_laugh');
+    return () => {
+      subscription.unsubscribe('user_laugh');
+    };
+  }, []);
+  
+  // 依赖项，props.name 发生变化，这个 effect 会在下次渲染之后执行，判断依赖项是否发生变化的方法是调用 Object.is
+  React.useEffect(() => {
+    document.title = `Hello, ${props.name}`;
+  }, [props.name]);
+
+  // 网络请求 effect 
   React.useEffect(() => {
     fetch('heros.json'))
       .then((result) => result.json())
@@ -35,27 +48,6 @@ export default function App() {
 
 </div>
 
-<div v-show="$slidev.nav.clicks === 2">
-
-```tsx {4-9}
-export default function App() {
-  const [heros, setHeros] = React.useState([]);
-
-  React.useLayoutEffect(() => {
-    const $list = document.querySelector('#user-list');
-    const { width, height } = $list.getBoundingClientRect();
-    console.log(width, height);
-  }, [heros]);
-
-  return (
-    <ul class="user-list">{/* ... */}</ul>
-  )
-}
-```
-
-</div>
-
-*<a v-click="2" href="https://stackblitz.com/edit/lesson-one-jsx?devToolsHeight=33&embed=1&file=App.tsx" target="_blank">Show me the code</a>*
 
 <!--
 还是以之前英雄列表的代码来看下 useEffect 的使用，useEffect 只接受两个参数，第一个是处理函数，我们的请求数据的接口调用的逻辑写在这里。
